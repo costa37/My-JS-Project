@@ -14,3 +14,10 @@ function generalValidation(){
   console.log(myObj);  
 }
 */
+
+//loading json start
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+var rawFile = new XMLHttpRequest();
+var temp = JSON.stringify(rawFile.open("GET", 'https://replit.com/@ConstantinG2/My-JS-Project#Task.json'));
+console.log(temp);
+console.log('Finished');
